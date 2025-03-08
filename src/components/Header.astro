@@ -1,12 +1,47 @@
 ---
-import astroLogo from '../assets/astro.svg';
-import background from '../assets/background.svg';
 ---
 
-<div id="container">
-	
-</div>
+<header>
+	<nav>
+        <ul id="nav-bar-list">
+            <li class="nav-links"><a href="">Coding League</a></li>
+            <li class="nav-links"><a href="">Projects</a></li>
+            <li class="nav-links"><a href="">Events</a></li>
+            <li class="nav-links"><a href="">About</a></li>
+        </ul>
+    </nav>
+</header>
 
 <style>
-
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+    // ----------
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #FEF8EC;
+    }
+    nav {
+        width: 100%;
+        border-bottom: 1px black solid;
+    }
+    #nav-bar-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+        height: 8em;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .nav-links {
+        display: inline-block;
+    }
+    .nav-links a {
+        text-decoration: none;
+        color: #464E4F;
+        font-size: 2em;
+        font-family: JetBrains Mono,serif;
+    }
 </style>
