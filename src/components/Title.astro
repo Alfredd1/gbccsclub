@@ -1,0 +1,58 @@
+---
+
+---
+<div id="title-container">
+    <div class="item title">
+        <p>GBC</p>
+        <p>COMPUTER</p>
+        <p>SCIENCE</p>
+        <p>CLUB</p>
+    </div>
+    <div class="item date">
+        <p>JOIN US</p>
+        <p>EVERY</p>
+        <p>WEDNESDAY</p>
+    </div>
+    <div class="item text">
+        <p>COMPETE</p>
+        <p>COLLABORATE</p>
+        <p>CREATE</p>
+    </div>
+    <div class="item time">
+        <p>4PM CASA</p>
+        <p>6PM LOMA</p>
+    </div>
+    <div></div>
+</div>
+
+<style>
+    #title-container {
+        width: 100%;
+        height: 30vh;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+        color: black;
+
+        grid-template-areas:
+                "title time date"
+                "title text date";
+    }
+    .item.title{
+        grid-area: title;
+        text-align: left;
+
+    }
+    .item.date{
+        grid-area: date;
+    }
+    .item.text{
+        grid-area: text;
+    }
+    .item.time{
+        grid-area: time;
+    }
+</style>
